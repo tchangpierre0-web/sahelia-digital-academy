@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink-50 text-ink-800 font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl
+           bg-gradient-to-r from-primary-400 to-primary-500 text-ink-900 font-bold
+           shadow-lg shadow-primary-400/30 transition-all duration-300
+           hover:shadow-xl hover:shadow-primary-400/50 hover:-translate-y-0.5 hover:from-primary-300 hover:to-primary-400
+           active:translate-y-0 active:shadow-md
+           focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl
+           bg-gradient-to-r from-secondary-400 to-secondary-500 text-white font-bold
+           shadow-lg shadow-secondary-400/30 transition-all duration-300
+           hover:shadow-xl hover:shadow-secondary-400/40 hover:-translate-y-0.5
+           active:translate-y-0 active:shadow-md
+           focus:outline-none focus:ring-2 focus:ring-secondary-400 focus:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl
+           border-2 border-primary-400 text-primary-700 font-bold
+           transition-all duration-300
+           hover:bg-primary-50 hover:border-primary-500 hover:-translate-y-0.5
+           focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2;
+  }
+
+  .btn-dark {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl
+           bg-ink-900 text-primary-300 font-bold
+           shadow-lg transition-all duration-300
+           hover:bg-ink-800 hover:-translate-y-0.5 hover:shadow-xl
+           focus:outline-none focus:ring-2 focus:ring-ink-700 focus:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-card border border-ink-100
+           transition-all duration-300
+           hover:shadow-card-hover hover:border-primary-200;
+  }
+
+  .card-warm {
+    @apply bg-gradient-to-br from-white to-primary-50/40 rounded-2xl shadow-card border border-primary-100
+           transition-all duration-300
+           hover:shadow-golden hover:border-primary-300;
+  }
+
+  .card-dark {
+    @apply bg-ink-900 rounded-2xl shadow-premium border border-ink-700
+           transition-all duration-300
+           hover:shadow-card-hover hover:border-primary-500/30;
+  }
+
+  .section-padding {
+    @apply px-5 sm:px-8 lg:px-16 xl:px-24;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-500 via-primary-400 to-secondary-500 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-warm {
+    @apply bg-gradient-to-r from-accent-500 via-primary-400 to-secondary-400 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-dark {
+    @apply bg-gradient-to-r from-ink-800 via-ink-700 to-ink-600 bg-clip-text text-transparent;
+  }
+
+  .nav-link {
+    @apply relative px-1 py-2 text-ink-600 font-semibold text-sm
+           transition-colors duration-300 hover:text-primary-600;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-400 to-secondary-400
+           transition-all duration-300;
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    @apply w-full;
+  }
+
+  .nav-link.active {
+    @apply text-primary-600;
+  }
+
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/40;
+  }
+
+  .glass-dark {
+    @apply bg-ink-900/80 backdrop-blur-md border border-ink-700/50;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300;
+  }
+
+  .shimmer-text {
+    background: linear-gradient(90deg, #ca8a04 0%, #facc15 25%, #fde047 50%, #facc15 75%, #ca8a04 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 3s linear infinite;
+  }
+}
+
+@layer utilities {
+  .bg-mesh {
+    background-image:
+      radial-gradient(at 20% 30%, rgba(250, 204, 21, 0.12) 0px, transparent 50%),
+      radial-gradient(at 80% 70%, rgba(132, 204, 22, 0.08) 0px, transparent 50%),
+      radial-gradient(at 50% 50%, rgba(245, 158, 11, 0.06) 0px, transparent 50%);
+  }
+
+  .bg-mesh-warm {
+    background-image:
+      radial-gradient(at 30% 20%, rgba(250, 204, 21, 0.18) 0px, transparent 50%),
+      radial-gradient(at 70% 80%, rgba(245, 158, 11, 0.10) 0px, transparent 50%);
+  }
+
+  .bg-mesh-dark {
+    background-image:
+      radial-gradient(at 20% 30%, rgba(250, 204, 21, 0.08) 0px, transparent 50%),
+      radial-gradient(at 80% 70%, rgba(132, 204, 22, 0.05) 0px, transparent 50%);
+  }
+
+  .text-shadow-soft {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  .text-shadow-glow {
+    text-shadow: 0 0 30px rgba(250, 204, 21, 0.3);
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+}
+
+::selection {
+  background-color: rgba(250, 204, 21, 0.3);
+  color: #422006;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f8f8f7;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #fde047, #ca8a04);
+  border-radius: 10px;
+  border: 2px solid #f8f8f7;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #facc15, #a16207);
+}
