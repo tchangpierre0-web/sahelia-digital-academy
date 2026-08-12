@@ -51,28 +51,28 @@ export interface ConcoursItem {
 export const concoursItems: ConcoursItem[] = [
   {
     id: 'concours-1',
-    name: 'Fonction Publique',
+    name: 'ENS Polytechniques '
     description:
-      "Préparation complète aux concours de la fonction publique catégorie A, B et C.",
+      "Préparation complète aux concours des campus ENS Polytechniques. Cours, annales et simulations pour maximiser vos chances de réussite.",
     icon: 'Landmark',
   },
   {
     id: 'concours-2',
-    name: 'Écoles d\'Ingénieurs',
+    name: 'IUT'
     description:
-      "Accompagnement ciblé pour les concours d'entrée dans les grandes écoles d'ingénieurs.",
+      "Accompagnement ciblé pour les concours des IUT camerounaise"
     icon: 'Calculator',
   },
   {
     id: 'concours-3',
-    name: 'Écoles de Commerce',
+    name: 'UCAC'
     description:
       "Préparation aux concours des écoles de commerce. Écrits, entretiens et mises en situation.",
     icon: 'Briefcase',
   },
   {
     id: 'concours-4',
-    name: 'Paramédicaux & Sociaux',
+    name: 'Ecole de management et commmerces'
     description:
       "Préparation aux concours paramédicaux et sociaux. Coaching et révisions ciblées.",
     icon: 'HeartPulse',
@@ -86,7 +86,7 @@ export const concoursItems: ConcoursItem[] = [
   },
   {
     id: 'concours-6',
-    name: 'Militaires & Sécurité',
+    name: 'Concour de Police'
     description:
       "Préparation physique et théorique aux concours des forces armées et de sécurité.",
     icon: 'ShieldCheck',
@@ -266,10 +266,10 @@ export const values = [
 ];
 
 export const CONTACT = {
-  email: 'contact@sahelia.org',
-  phone: '+237 6 99 00 11 22',
-  phoneRaw: '+237699001122',
-  address: 'Quartier Plateau, Garoua, Cameroun',
+  email: 'saheliadigitalacademy@gmail.com',
+  phone: '+237 6 99 22 76 52',
+  phoneRaw: '+237699227652',
+  address: 'Quartier Yelwa, Garoua, Cameroun',
   tiktok: 'https://www.tiktok.com/@sahelia',
   facebook: 'https://www.facebook.com/sahelia',
   mapsEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.5!2d13.3906!3d9.3009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sGaroua%2C%20Cameroun!5e0!3m2!1sfr!2scm!4v1700000000000',

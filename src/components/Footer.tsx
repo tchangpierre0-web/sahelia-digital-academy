@@ -33,7 +33,7 @@ export default function Footer({ onNavigate }: FooterProps) {
               <Logo className="w-11 h-11" variant="light" />
               <div className="leading-tight">
                 <span className="font-display font-extrabold text-lg text-white block">Sahelia</span>
-                <span className="text-[10px] uppercase tracking-widest text-primary-500 font-bold">Centre de formation</span>
+                <span className="text-[10px] uppercase tracking-widest text-primary-500 font-bold">Digital Academy</span>
               </div>
             </div>
             <p className="text-sm text-ink-400 leading-relaxed">
