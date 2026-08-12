@@ -10,7 +10,7 @@ interface NavbarProps {
 }
 
 const resourceItems: { id: Page; title: string; description: string; icon: string }[] = [
-  { id: 'centre-formation', title: 'Centre de formation', description: "Découvrez Sahelia et tous nos services", icon: 'Building2' },
+  { id: 'centre-formation', title: 'Centre de formation', description: "Découvrez Sahelia Digital Academy  et tous nos services", icon: 'Building2' },
   { id: 'prepa-concours', title: 'Prépa concours', description: "Préparation intensive aux concours", icon: 'Target' },
   { id: 'repetition', title: 'Répétition', description: "Soutien scolaire et cours personnalisés", icon: 'BookOpen' },
 ];
@@ -78,7 +78,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
               Sahelia
             </span>
             <span className="text-[10px] uppercase tracking-widest text-primary-600 font-bold">
-              Centre de formation
+              Digital Academy
             </span>
           </div>
         </button>

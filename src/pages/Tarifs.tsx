@@ -96,7 +96,7 @@ export default function Tarifs({ onNavigate }: TarifsProps) {
               <div className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-primary-100 to-secondary-100 border border-primary-200 shadow-sm">
                 <Sparkles className="w-5 h-5 text-accent-500" />
                 <p className="text-sm text-ink-700">
-                  <span className="font-bold">Période d'essai offerte</span> – Annulez à tout moment, sans engagement.
+                  <span className="font-bold">Paiement en tranche possible</span> – Annulez à tout moment, sans engagement.
                 </p>
               </div>
             </div>

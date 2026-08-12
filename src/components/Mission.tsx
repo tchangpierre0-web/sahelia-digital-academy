@@ -90,7 +90,7 @@ export default function Mission() {
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-secondary-400 to-secondary-500 flex items-center justify-center text-white mx-auto mb-3 shadow-lg shadow-secondary-400/20 transition-all duration-300 group-hover:scale-110">
                     <Globe className="w-6 h-6" />
                   </div>
-                  <p className="text-white font-bold text-sm">Partout au Cameroun</p>
+                  <p className="text-white font-bold text-sm">partenaire Educcia Cameroun</p>
                   <p className="text-ink-400 text-xs mt-1">De Garoua à toutes les régions</p>
                 </div>
               </div>

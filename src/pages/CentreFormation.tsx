@@ -13,7 +13,7 @@ const serviceIconMap: Record<string, React.ComponentType<{ className?: string }>
 };
 
 const whyChoose = [
-  { icon: Users, title: 'Profs expérimentés', text: 'Une équipe de 50+ enseignants passionnés et qualifiés.' },
+  { icon: Users, title: 'Profs expérimentés', text: 'Une équipe de 5+ enseignants passionnés et qualifiés.' },
   { icon: Award, title: '92% de réussite', text: 'Un taux de réussite exceptionnel aux concours.' },
   { icon: Clock, title: 'Flexible', text: 'Cours en présentiel et en ligne, à votre rythme.' },
   { icon: Heart, title: 'Suivi personnalisé', text: 'Un accompagnement sur-mesure pour chaque élève.' },
@@ -43,13 +43,13 @@ export default function CentreFormation({ onNavigate }: CentreFormationProps) {
                 <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white">
                   <img
                     src="https://images.pexels.com/photos/5212343/pexels-photo-5212343.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="Centre de formation Sahelia"
+                    alt="Centre de formation Sahelia Digital Academy"
                     className="w-full h-[420px] object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink-900/30 to-transparent" />
                 </div>
                 <div className="absolute -bottom-5 -right-5 bg-gradient-to-br from-primary-400 to-accent-400 rounded-2xl shadow-xl p-5 animate-float">
-                  <p className="text-3xl font-extrabold text-ink-900">15+</p>
+                  <p className="text-3xl font-extrabold text-ink-900">5+</p>
                   <p className="text-xs font-bold text-ink-800">ans d'expérience</p>
                 </div>
               </div>

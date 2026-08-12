@@ -153,7 +153,7 @@ export default function Hero({ onNavigate }: HeroProps) {
               <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white">
                 <img
                   src="https://images.pexels.com/photos/5212702/pexels-photo-5212702.jpeg?auto=compress&cs=tinysrgb&w=900"
-                  alt="Étudiants accompagnés par Sahelia"
+                  alt="suivie de Sahelia Digital Academy"
                   className="w-full h-[480px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink-900/40 via-transparent to-primary-500/10" />
@@ -176,7 +176,7 @@ export default function Hero({ onNavigate }: HeroProps) {
               <div className="absolute -top-4 -right-4 bg-gradient-to-br from-primary-400 to-accent-400 rounded-2xl shadow-xl px-5 py-3 animate-bounce-subtle">
                 <div className="flex items-center gap-2">
                   <Star className="w-5 h-5 text-ink-900 fill-ink-900" />
-                  <p className="text-sm font-extrabold text-ink-900">+2000 élèves</p>
+                  <p className="text-sm font-extrabold text-ink-900">+200 élèves</p>
                 </div>
               </div>
 
@@ -184,7 +184,7 @@ export default function Hero({ onNavigate }: HeroProps) {
               <div className="absolute top-1/3 -right-8 bg-ink-900 rounded-xl shadow-xl px-4 py-3 animate-float-slow">
                 <div className="flex items-center gap-2 text-primary-300">
                   <User className="w-4 h-4" />
-                  <p className="text-xs font-bold">50+ professeurs</p>
+                  <p className="text-xs font-bold">5+ professeurs</p>
                 </div>
               </div>
             </div>

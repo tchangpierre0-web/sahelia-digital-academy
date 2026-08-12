@@ -23,8 +23,8 @@ interface PrepaConcoursProps {
 }
 
 const fraisDossier = [
-  { label: 'Frais d\'inscription', value: '25€', note: 'Unique, non remboursable' },
-  { label: 'Frais de dossier', value: '15€', note: 'Couvre l\'évaluation et le placement' },
+  { label: 'Frais d\'inscription', value: '2500FCFA', note: 'Unique, non remboursable' },
+  { label: 'Frais de dossier', value: '42000FCFA', note: 'Couvre l\'évaluation et le placement' },
   { label: 'Accompte', value: '30%', note: 'À verser avant le début des cours' },
 ];
 

@@ -120,7 +120,7 @@ export default function Footer({ onNavigate }: FooterProps) {
       <div className="relative border-t border-ink-800">
         <div className="section-padding py-6">
           <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-ink-500">
-            <p>&copy; {new Date().getFullYear()} Sahelia. Tous droits réservés.</p>
+            <p>&copy; {new Date().getFullYear()} Sahelia Digital Academy . Tous droits réservés.</p>
             <p className="font-serif italic text-primary-500/70">L'excellence au service de votre réussite.</p>
           </div>
         </div>
