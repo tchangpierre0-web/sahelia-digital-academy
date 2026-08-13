@@ -85,7 +85,7 @@ export default function Hero({ onNavigate }: HeroProps) {
             <Reveal delay={160}>
               <p className="mt-6 text-lg lg:text-xl text-ink-500 max-w-xl leading-relaxed">
                 Bien plus qu'un centre de prépa concours : <strong className="text-ink-700">répétition</strong>,{' '}
-                <strong className="text-ink-700c>cours en ligne</strong>,{' '}
+                <strong className="text-ink-700">cours en ligne</strong>,{' '}
                 <strong className="text-ink-700">préparation aux concours</strong> et accompagnement scolaire
                 sur-mesure.
               </p>
