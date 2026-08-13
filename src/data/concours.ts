@@ -51,28 +51,28 @@ export interface ConcoursItem {
 export const concoursItems: ConcoursItem[] = [
   {
     id: 'concours-1',
-    name: 'ENS Polytechniques '
+    name: 'ENS Polytechniques ',
     description:
       "Préparation complète aux concours des campus ENS Polytechniques. Cours, annales et simulations pour maximiser vos chances de réussite.",
     icon: 'Landmark',
   },
   {
     id: 'concours-2',
-    name: 'IUT'
+    name: 'IUT',
     description:
-      "Accompagnement ciblé pour les concours des IUT camerounaise"
+      "Accompagnement ciblé pour les concours des IUT camerounaise",
     icon: 'Calculator',
   },
   {
     id: 'concours-3',
-    name: 'UCAC'
+    name: 'UCAC',
     description:
       "Préparation aux concours des écoles de commerce. Écrits, entretiens et mises en situation.",
     icon: 'Briefcase',
   },
   {
     id: 'concours-4',
-    name: 'Ecole de management et commmerces'
+    name: 'Ecole de management et commmerces',
     description:
       "Préparation aux concours paramédicaux et sociaux. Coaching et révisions ciblées.",
     icon: 'HeartPulse',
@@ -86,7 +86,7 @@ export const concoursItems: ConcoursItem[] = [
   },
   {
     id: 'concours-6',
-    name: 'Concour de Police'
+    name: 'Concour de Police',
     description:
       "Préparation physique et théorique aux concours des forces armées et de sécurité.",
     icon: 'ShieldCheck',
