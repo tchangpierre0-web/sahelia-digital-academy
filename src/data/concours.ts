@@ -270,7 +270,7 @@ export const CONTACT = {
   phone: '+237 6 99 22 76 52',
   phoneRaw: '+237699227652',
   address: 'Quartier Yelwa, Garoua, Cameroun',
-  tiktok: 'https://www.tiktok.com/@sahelia',
-  facebook: 'https://www.facebook.com/sahelia',
-  mapsEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.5!2d13.3906!3d9.3009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sGaroua%2C%20Cameroun!5e0!3m2!1sfr!2scm!4v1700000000000',
+  tiktok: 'https://www.tiktok.com/@makseducation?_r=1&_t=ZN-98te0DbHiLe',
+  facebook: 'https://www.facebook.com/profile.php?id=100089629516400',
+  mapsEmbed: 'https://maps.app.goo.gl/NS2ERfrgLQZ4ZkCP7',
 };
