@@ -13,19 +13,27 @@ interface SubmissionPayload {
 
 export async function submitForm(payload: SubmissionPayload): Promise<{ success: boolean; error?: string }> {
   try {
-    const functionUrl = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-notification`;
-    const response = await fetch(functionUrl, {
+    const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
       },
-      body: JSON.stringify(payload),
+      body: JSON.stringify({
+        access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || '4611d005-e01a-47b1-a822-dec7b1ceaa4d',
+        subject: payload.type === 'contact' ? 'Nouveau message de contact - Sahelia' : 'Nouvelle demande d\'inscription - Sahelia',
+        from_name: 'Sahelia Digital Academy',
+        ...payload,
+      }),
     });
 
+    const responseData = await response.json().catch(() => ({}));
+
     if (!response.ok) {
-      const errorData = await response.json().catch(() => ({}));
-      return { success: false, error: errorData.error || `Erreur (${response.status})` };
+      return { success: false, error: responseData.message || responseData.error || `Erreur (${response.status})` };
+    }
+
+    if (responseData.success === false) {
+      return { success: false, error: responseData.message || 'Le message n\'a pas pu être envoyé.' };
     }
 
     return { success: true };
