@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Menu, X, ChevronDown, BookOpen, Laptop, Target, ArrowRight } from 'lucide-react';
-import { Logo } from './Logo';
+import Logo from './Logo';
 
 export type Page = 'home' | 'centre-formation' | 'prepa-concours' | 'repetition' | 'tarifs' | 'protocole' | 'rejoindre' | 'contactgit ';
 
