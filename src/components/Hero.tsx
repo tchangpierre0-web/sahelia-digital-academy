@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { User, Mail, Phone, Facebook, Sparkles, CheckCircle2, ArrowRight, Star, TrendingUp } from 'lucide-react';
 import TikTokIcon from './TikTokIcon';
+import WhatsAppIcon from './WhatsAppIcon';
 import Reveal from './Reveal';
 import { CONTACT } from '@/data/concours';
 
@@ -13,6 +14,7 @@ const socialLinks = [
   { name: 'Facebook', href: CONTACT.facebook, icon: Facebook, hoverClass: 'hover:bg-blue-600 hover:text-white' },
   { name: 'E-mail', href: `mailto:${CONTACT.email}`, icon: Mail, hoverClass: 'hover:bg-primary-400 hover:text-ink-900' },
   { name: 'Téléphone', href: `tel:${CONTACT.phoneRaw}`, icon: Phone, hoverClass: 'hover:bg-secondary-400 hover:text-white' },
+  { name: 'WhatsApp', href: CONTACT.whatsapp, icon: WhatsAppIcon, hoverClass: 'hover:bg-green-500 hover:text-white' },
 ];
 
 const highlights = ['Répétition & soutien', 'Cours en ligne', 'Prépa concours', 'Suivi personnalisé'];

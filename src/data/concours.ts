@@ -272,5 +272,6 @@ export const CONTACT = {
   address: 'Quartier Yelwa, Garoua, Cameroun',
   tiktok: 'https://www.tiktok.com/@makseducation?_r=1&_t=ZN-98te0DbHiLe',
   facebook: 'https://www.facebook.com/profile.php?id=100089629516400',
+  whatsapp: 'https://wa.me/237699227652',
   mapsEmbed: 'https://maps.app.goo.gl/NS2ERfrgLQZ4ZkCP7',
 };

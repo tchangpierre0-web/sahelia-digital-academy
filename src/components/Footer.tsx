@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin, ArrowRight, Send } from 'lucide-react';
 import TikTokIcon from './TikTokIcon';
+import WhatsAppIcon from './WhatsAppIcon';
 import Logo from './Logo';
 import type { Page } from './Navbar';
 import { CONTACT } from '@/data/concours';
@@ -95,6 +96,11 @@ export default function Footer({ onNavigate }: FooterProps) {
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
                   <path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.69.24 2.69.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/>
                 </svg>
+              </a>
+              <a href={CONTACT.whatsapp} target="_blank" rel="noopener noreferrer" title="WhatsApp"
+                 className="w-10 h-10 rounded-xl bg-ink-800 hover:bg-green-500 flex items-center justify-center text-ink-400 hover:text-white transition-all duration-300 hover:scale-110"
+                 aria-label="WhatsApp">
+                <WhatsAppIcon className="w-4 h-4" />
               </a>
             </div>
           </div>
