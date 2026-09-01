@@ -183,7 +183,7 @@ export const tarifPlans: TarifPlan[] = [
   {
     id: 'repetition',
     name: 'Répétition',
-    price: '15 000 FCFA',
+    price: '10 000 FCFA',
     period: '/mois',
     description: 'Soutien scolaire personnalisé',
     icon: 'BookOpen',
@@ -201,7 +201,7 @@ export const tarifPlans: TarifPlan[] = [
   {
     id: 'prepa-concours',
     name: 'Prépa concours',
-    price: '35 000 FCFA',
+    price: '50 000 FCFA',
     period: '/mois',
     description: 'Préparation intensive aux concours',
     icon: 'Target',
@@ -220,7 +220,7 @@ export const tarifPlans: TarifPlan[] = [
   {
     id: 'cours-en-ligne',
     name: 'Cours en ligne',
-    price: '20 000 FCFA',
+    price: '5 000 FCFA',
     period: '/mois',
     description: 'Apprenez de chez vous',
     icon: 'Laptop',
@@ -238,10 +238,10 @@ export const tarifPlans: TarifPlan[] = [
 ];
 
 export const stats = [
-  { id: 'stat-1', value: 15, suffix: '+', label: "Années d'expérience" },
-  { id: 'stat-2', value: 2000, suffix: '+', label: 'Élèves accompagnés' },
+  { id: 'stat-1', value: 5, suffix: '+', label: "Années d'expérience" },
+  { id: 'stat-2', value: 500, suffix: '+', label: 'Élèves accompagnés' },
   { id: 'stat-3', value: 92, suffix: '%', label: 'Taux de réussite' },
-  { id: 'stat-4', value: 50, suffix: '+', label: 'Professeurs experts' },
+  { id: 'stat-4', value: 5, suffix: '+', label: 'Professeurs experts' },
 ];
 
 export const values = [
