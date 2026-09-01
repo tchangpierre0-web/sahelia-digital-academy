@@ -1,1 +1,1 @@
-export default Logo;
+export function Logo() { ... }
