@@ -1,4 +1,4 @@
-export function Logo() { ... }import { useId } from 'react';
+import { useId } from 'react';
 
 interface LogoProps {
   className?: string;
