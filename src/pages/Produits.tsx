@@ -20,9 +20,9 @@ interface Product {
 const products: Product[] = [
   {
     id: 1,
-    name: 'Pack Prépa Concours',
+    name: 'TD Prépa Concours sahelia',
     description: 'Méthodes, exercices et fiches de révision pour préparer vos épreuves.',
-    price: 15000,
+    price: 1500,
     category: 'Concours',
     image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85',
     badge: 'Best-seller',
@@ -31,7 +31,7 @@ const products: Product[] = [
     id: 2,
     name: 'Kit Réussite Scolaire',
     description: 'Un ensemble de supports pratiques pour progresser avec régularité.',
-    price: 10000,
+    price: 1000,
     category: 'Scolaire',
     image: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=900&q=85',
   },
@@ -46,12 +46,13 @@ const products: Product[] = [
   },
   {
     id: 4,
-    name: 'Cahier de Méthodologie',
+    name: 'Bord  mathematique',
     description: 'Un cahier clair pour organiser vos révisions et gagner en efficacité.',
     price: 5000,
     category: 'Scolaire',
     image: 'https://images.unsplash.com/photo-1455885666463-3d8b0b2e6d7c?auto=format&fit=crop&w=900&q=85',
   },
+  
 ];
 
 const categories: ProductCategory[] = ['Tous', 'Concours', 'Scolaire', 'Orientation'];
@@ -165,7 +166,7 @@ export default function Produits() {
             <div className="mt-16 flex flex-col items-start justify-between gap-6 rounded-2xl bg-gradient-to-r from-primary-100 via-primary-50 to-secondary-100 p-6 sm:flex-row sm:items-center md:p-8">
               <div className="flex items-start gap-4">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-secondary-600 shadow-sm"><Check className="h-5 w-5" /></div>
-                <div><h3 className="font-bold text-ink-900">Besoin d'un conseil avant de choisir ?</h3><p className="mt-1 text-sm text-ink-600">Notre équipe vous aide à trouver la ressource adaptée à votre objectif.</p></div>
+                <div><h3 className="font-bold text-ink-900">Nous contacter ?</h3><p className="mt-1 text-sm text-ink-600">Notre équipe vous aide à trouver la ressource adaptée à votre objectif.</p></div>
               </div>
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="btn-dark shrink-0 text-sm">Parler à un conseiller <ArrowRight className="h-4 w-4" /></a>
             </div>
