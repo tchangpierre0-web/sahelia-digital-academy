@@ -13,6 +13,7 @@ export default function Footer({ onNavigate }: FooterProps) {
   const navLinks: { id: Page; label: string }[] = [
     { id: 'home', label: 'Accueil' },
     { id: 'centre-formation', label: 'Centre de formation' },
+    { id: 'produits', label: 'Nos produits' },
     { id: 'prepa-concours', label: 'Prépa concours' },
     { id: 'repetition', label: 'Répétition' },
     { id: 'tarifs', label: 'Tarifs' },

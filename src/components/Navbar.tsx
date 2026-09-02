@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
-import { Menu, X, ChevronDown, BookOpen, Target, ArrowRight } from 'lucide-react';
+import { Menu, X, ChevronDown, BookOpen, Target, ArrowRight, ShoppingBag } from 'lucide-react';
 import Logo from './Logo';
 
-export type Page = 'home' | 'centre-formation' | 'prepa-concours' | 'repetition' | 'tarifs' | 'protocole' | 'rejoindre' | 'contact';
+export type Page = 'home' | 'centre-formation' | 'produits' | 'prepa-concours' | 'repetition' | 'tarifs' | 'protocole' | 'rejoindre' | 'contact';
 
 interface NavbarProps {
   currentPage: Page;
@@ -11,12 +11,14 @@ interface NavbarProps {
 
 const resourceItems: { id: Page; title: string; description: string; icon: string }[] = [
   { id: 'centre-formation', title: 'Centre de formation', description: "Découvrez Sahelia Digital Academy  et tous nos services", icon: 'Building2' },
+  { id: 'produits', title: 'Nos produits', description: "Découvrez nos supports et ressources pour progresser", icon: 'ShoppingBag' },
   { id: 'prepa-concours', title: 'Prépa concours', description: "Préparation intensive aux concours", icon: 'Target' },
   { id: 'repetition', title: 'Répétition', description: "Soutien scolaire et cours personnalisés", icon: 'BookOpen' },
 ];
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Building2: Target,
+  ShoppingBag,
   Target,
   BookOpen,
 };

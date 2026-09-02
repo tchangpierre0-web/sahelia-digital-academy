@@ -8,6 +8,7 @@ import Rejoindre from '@/pages/Rejoindre';
 import Protocole from '@/pages/Protocole';
 import Tarifs from '@/pages/Tarifs';
 import CentreFormation from '@/pages/CentreFormation';
+import Produits from '@/pages/Produits';
 import PrepaConcours from '@/pages/PrepaConcours';
 import Repetition from '@/pages/Repetition';
 
@@ -29,6 +30,8 @@ function App() {
         return <Home onNavigate={handleNavigate} />;
       case 'centre-formation':
         return <CentreFormation onNavigate={handleNavigate} />;
+      case 'produits':
+        return <Produits />;
       case 'prepa-concours':
         return <PrepaConcours onNavigate={handleNavigate} />;
       case 'repetition':
